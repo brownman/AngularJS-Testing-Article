@@ -5,8 +5,12 @@
     "type": "git",
     "url": "https://github.com/matsko/YOM-AngularJS-Testing-Article"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install"
+    "postinstall": "./node_modules/.bin/bower install",
+    "test": "grunt test"
   },
   "homepage": "https://github.com/yearofmoo/YOM-AngularJS-Testing-Article",
   "devDependencies": {
