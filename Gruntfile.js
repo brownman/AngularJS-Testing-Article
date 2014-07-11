@@ -121,13 +121,13 @@ module.exports = function(grunt) {
           'app/scripts/controllers/**/*.js',
           'app/scripts/filters/**/*.js',
           'app/scripts/config/routes.js',
-          'app/scripts/app.js',
+          'app/scripts/app.js'
         ]
       }
     }
   });
 
-  grunt.registerTask('test', ['connect:testserver','karma:unit',/*'karma:midway',*/ 'karma:e2e']);
+  grunt.registerTask('test', ['connect:testserver','karma:unit',/* 'karma:midway',*/ 'karma:e2e']);
   grunt.registerTask('test:unit', ['karma:unit']);
   grunt.registerTask('test:midway', ['connect:testserver','karma:midway']);
   grunt.registerTask('test:e2e', ['connect:testserver', 'karma:e2e']);
